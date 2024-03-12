@@ -1,4 +1,4 @@
-# time-calculator
+# Time Calculator / Firefox Extension
 Use natural language to calculate minutes/hours between specified times. 
 
 
