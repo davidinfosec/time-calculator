@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Calculator</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        #header h2 {
+            margin: 0;
+            padding-bottom: 10px;
+            color: #0d6efd; /* Bootstrap primary color */
+            text-align: center;
+        }
+        #links {
+            text-align: center;
+            padding: 10px;
+        }
+        #links a {
+            color: #0d6efd;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        #links a:hover {
+            text-decoration: underline;
+        }
+        input[type="text"] {
+            width: calc(100% - 0px);
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        
+
+        
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #0d6efd; /* Bootstrap primary color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0b5ed7; /* Darken the button a bit on hover */
+        }
+        #result, #helpInfo {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h2>Time Calculator</h2>
+        <div id="links">
+            <a href="https://davidinfosec.com" target="_blank">Blog</a>
+            <a href="https://davidinfosec.com/donate" target="_blank">Donate</a>
+        </div>
+    </div>
+    <input type="text" id="timeInput" placeholder="e.g., 6:03a to 7:03p">
+    <button id="calculateButton">Calculate</button>
+    <button id="helpButton">Help</button>
+    <div id="result"></div>
+    <div id="helpInfo" style="display: none;">
+        <p>Enter times in the format: 6:03a to 7:03p. Use 'a' for AM and 'p' for PM.</p>
+        <p>If AM/PM is not specified, the current time of day is assumed.</p>
+        <p>Add '?M' or '?H' after your query to get results in minutes or hours, respectively.</p>
+        
+        <br>
+        <p>Created with love by DavidInfosec.com</p>
+    
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>
